@@ -1,0 +1,9 @@
+flowdometry/downscale_factor: 0.7
+
+flowdometry/camera_info/fx: 350.
+flowdometry/camera_info/fy: 350.
+flowdometry/camera_info/cx: 355.
+flowdometry/camera_info/cy: 187.
+
+flowdometry/longitudinal_velocity_filter/lowpass_tau: 3.
+flowdometry/longitudinal_velocity_filter/lowpass_ts: 1.

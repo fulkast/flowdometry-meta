@@ -1,0 +1,21 @@
+<package>
+  <name>flowdometry_meta</name>
+  <version>1.0.0</version>
+  <description>
+    This package calculates dense indirect visual odometry using
+    depth and optical measurements
+  </description>
+  <maintainer email="fulkast@gmail.com">Lanke Fu</maintainer>
+  <license>NONE</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>low_level_vision</run_depend>
+  <run_depend>utilities</run_depend>
+  <run_depend>flowdometry</run_depend>
+
+  <export>
+    <metapackage />
+  </export>
+
+</package>

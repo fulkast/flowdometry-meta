@@ -1,0 +1,12 @@
+<launch>
+  <rosparam command="load" file="$(find flowdometry)/config/params.yml"/>
+
+  <node name="flowdometry" pkg="flowdometry" type="flowdometry_node" output="screen">
+  <!-- <remap from="rgb" to="/stereo/left/image_rect" /> -->
+  <remap from="rgb" to="left/image_rect_color" />
+  <remap from="rgb/compressed" to="/left/image_rect_color/compressed/" />
+  <!-- <remap from="depth" to="/stereo/depth" /> -->
+  <remap from="depth" to="/depth/depth_registered" />
+  <remap from="depth/compressedDepth" to="/camera/depth_registered/image_raw/compressedDepth" />
+  </node>
+</launch>
