@@ -108,7 +108,6 @@ void solveNormalEquations(float *dTdR) {
 
 void initVariables() {
   // load ROS parameters
-
   downscale_factor = 1.;
   ros::param::get("flowdometry/downscale_factor", downscale_factor);
 

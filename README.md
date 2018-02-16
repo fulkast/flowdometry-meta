@@ -45,6 +45,8 @@ Now what's left is to ensure that your corresponding `RGB` and `Depth` stream so
 
 `$ roslaunch flowdometry flowdometry.launch`
 
+The output of the flowdometry node is the low pass filtered forward longitudinal velocity which is available on the topic `longitudinal_velocity`
+
 ## Acknowledgements
 This project is heavily dependent on [Karl Pauwel's](http://www.karlpauwels.com/) implementation of phase-based optical flow (robust to photometric errors) in CUDA. He shared the optical flow implementation (`low_level_vision` and `utilities`) in a ROS metapackage for object tracking called [simtrack](https://github.com/karlpauwels/simtrack).
 
