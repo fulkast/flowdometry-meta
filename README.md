@@ -64,3 +64,6 @@ for the sparsity of the data points (it allocates memory for a lot of redundant 
   positions where no optical flow/depth value is available). As such it is likely that
   the program would try to allocate more memory than there is available on your GPU.
   Currently, this problem is handled by reducing the scaling factor, which would reduce the resolution of the images and appropriately rescaling the camera intrinsics (at the cost of lower precision). The scaling parameter is found in `flowdometry/config/params.yml`
+
+## Miscellaneous Visualizations
+![deadreckoning](./deadreckoningdrift3d2.png "Dead reckoning drifts in a sequence navigating around a table")  
